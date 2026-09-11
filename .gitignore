@@ -1,0 +1,10 @@
+# 개인정보 문서 (공개 저장소 노출 방지)
+*.md
+!README.md
+*.pdf
+
+# OS / 편집기
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

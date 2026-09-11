@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>금바다 · 백엔드/풀스택 엔지니어</title>
+  <meta name="description" content="흩어진 시스템을 잇는 백엔드·풀스택 엔지니어. 시스템 연동, 데이터 파이프라인, 레거시 현대화 실무 포트폴리오." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="#top">금바다<span class="nav__brand-dot">.</span></a>
+      <nav class="nav__links" aria-label="주요 섹션">
+        <a href="#about">소개</a>
+        <a href="#stack">기술 스택</a>
+        <a href="#work">프로젝트</a>
+        <a href="#career">경력</a>
+        <a href="#ops">엔지니어링</a>
+        <a href="#contact">연락처</a>
+      </nav>
+      <button class="nav__toggle" aria-label="메뉴 열기" aria-expanded="false" id="navToggle">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <p class="hero__eyebrow">백엔드 · 풀스택 엔지니어</p>
+        <h1 class="hero__title">
+          흩어진 시스템을<br />
+          <em>하나로 잇습니다.</em>
+        </h1>
+        <p class="hero__lead">
+          이기종 사내 시스템 연동, 실시간 데이터 파이프라인, 레거시의 현대화.
+          자동차 유통·부동산·게임 도메인에서 서버부터 화면까지 만들어 왔습니다.
+        </p>
+        <div class="hero__facts">
+          <div class="fact">
+            <span class="fact__k">2017 – 현재</span>
+            <span class="fact__v">실무 개발</span>
+          </div>
+          <div class="fact">
+            <span class="fact__k">자동차 · 부동산 · 게임</span>
+            <span class="fact__v">경험 도메인</span>
+          </div>
+          <div class="fact">
+            <span class="fact__k">JLPT N1</span>
+            <span class="fact__v">일본어 실무</span>
+          </div>
+        </div>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#work">프로젝트 보기</a>
+          <a class="btn btn--ghost" href="#contact">연락하기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="wrap section__head">
+        <h2 class="section__title">일하는 방식</h2>
+        <p class="section__sub">시스템 사이의 빈틈을 메우고, 오래된 코드를 다시 살립니다.</p>
+      </div>
+      <div class="wrap about">
+        <p class="about__body">
+          여러 시스템이 얽힌 환경에서 데이터가 어긋나지 않게 흐르도록 만드는 일을 주로 해왔습니다.
+          외부 ERP와 앱 백엔드를 잇는 연동 계층, 변경분을 실시간으로 실어 나르는 CDC 이벤트 파이프라인,
+          수년째 운영 중인 대형 레거시의 유지보수와 API·SPA로의 전환까지 —
+          운영에 부담을 주지 않으면서 바꾸는 방법을 고민합니다.
+        </p>
+        <ul class="about__points">
+          <li>
+            <h3>시스템 연동</h3>
+            <p>인터페이스 미들웨어, CDC 이벤트, DB 큐 재전송으로 이기종 시스템 사이 데이터 정합성을 지킵니다.</p>
+          </li>
+          <li>
+            <h3>레거시 현대화</h3>
+            <p>운영 중인 모놀리식을 멈추지 않고 REST API · SPA 구조로 점진 전환합니다.</p>
+          </li>
+          <li>
+            <h3>운영·트러블슈팅</h3>
+            <p>침해 대응, DB 마이그레이션, 부하 테스트까지 문제를 재현하고 근본 원인을 찾습니다.</p>
+          </li>
+          <li>
+            <h3>풀스택 폭</h3>
+            <p>PHP·Java 백엔드부터 Vue·React 프론트, .NET 데스크톱까지 필요한 층을 직접 다룹니다.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== STACK ===================== -->
+    <section class="section section--alt" id="stack">
+      <div class="wrap section__head">
+        <h2 class="section__title">기술 스택</h2>
+        <p class="section__sub">숙련도 순으로 정리했습니다.</p>
+      </div>
+      <div class="wrap stack">
+        <div class="stack__col">
+          <div class="stack__level" data-level="주력">
+            <h3>주력</h3>
+            <span class="stack__hint">매일 쓰는, 자신 있는 도구</span>
+          </div>
+          <ul class="tags">
+            <li>PHP</li><li>CodeIgniter 3 / 4</li><li>MS SQL Server</li>
+            <li>MySQL / MariaDB</li><li>Docker</li><li>Git</li>
+          </ul>
+        </div>
+        <div class="stack__col">
+          <div class="stack__level" data-level="능숙">
+            <h3>능숙</h3>
+            <span class="stack__hint">실무 프로젝트로 다뤄본</span>
+          </div>
+          <ul class="tags">
+            <li>Java 17 · Spring Boot 3</li><li>Vue 3</li><li>React</li>
+            <li>Laravel / Lumen</li><li>CakePHP</li><li>AngularJS</li>
+            <li>TypeScript</li><li>PostgreSQL</li><li>Redis</li>
+            <li>RabbitMQ</li><li>Debezium / CDC</li><li>AWS</li>
+            <li>Jenkins</li><li>Nginx</li>
+          </ul>
+        </div>
+        <div class="stack__col">
+          <div class="stack__level" data-level="경험">
+            <h3>경험</h3>
+            <span class="stack__hint">닿아 본, 필요하면 쓰는</span>
+          </div>
+          <ul class="tags">
+            <li>C# · .NET WinForms</li><li>Flutter / Dart</li><li>Unity · C++</li>
+            <li>Python</li><li>k6</li><li>Naver Cloud</li>
+            <li>Tencent COS</li><li>Azure Blob</li><li>DynamoDB</li>
+            <li>Sass · Pug</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WORK ===================== -->
+    <section class="section" id="work">
+      <div class="wrap section__head">
+        <h2 class="section__title">대표 프로젝트</h2>
+        <p class="section__sub">고객사·브랜드명은 밝히지 않고 업종과 기술만 정리했습니다.</p>
+      </div>
+      <div class="wrap work">
+
+        <article class="proj proj--feature">
+          <div class="proj__meta">
+            <span class="proj__domain">자동차 유통</span>
+            <span class="proj__type">시스템 연동 미들웨어</span>
+          </div>
+          <h3 class="proj__title">이기종 시스템 연동 인터페이스 허브</h3>
+          <p class="proj__desc">
+            영업·계약·차량 인도·출고 전 점검·A/S로 이어지는 사내 시스템들을 잇는 API 허브.
+            외부 브로커 없이 DB 테이블 기반 전송 큐로 비동기 배치와 실패 재전송을 처리했습니다.
+          </p>
+          <ul class="proj__highlights">
+            <li>DMS·CRM·A/S 연동 서비스 40여 종 설계</li>
+            <li>JWT + RSA/AES 암복호화, 본인인증 파이프라인</li>
+            <li>카카오 알림톡·SMS 다채널 발송, Swagger 명세화</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>PHP 8.1</li><li>CodeIgniter 4</li><li>MS SQL Server</li>
+            <li>Docker</li><li>Jenkins</li>
+          </ul>
+        </article>
+
+        <article class="proj proj--feature">
+          <div class="proj__meta">
+            <span class="proj__domain">자동차 유통</span>
+            <span class="proj__type">실시간 이벤트 파이프라인</span>
+          </div>
+          <h3 class="proj__title">고객 라이프사이클 CDC 컨슈머</h3>
+          <p class="proj__desc">
+            상담→시승→견적→계약→출고→정비로 이어지는 고객 여정을 본사와 실시간 동기화하는
+            메시지 컨슈머. 변경 데이터를 이벤트로 실어 나르고, 장애에도 유실 없이 복원합니다.
+          </p>
+          <ul class="proj__highlights">
+            <li>CDC 메시지(생성/수정/삭제) 리스너 20여 종 설계</li>
+            <li>수동 ACK · DLX(Dead Letter) · retry 공통화로 장애 복원력 확보</li>
+            <li>수동 트랜잭션 중복 커밋 가드, Spring 6 마이그레이션 대응</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>Java 17</li><li>Spring Boot 3</li><li>RabbitMQ</li>
+            <li>Debezium CDC</li><li>MS SQL Server</li>
+          </ul>
+        </article>
+
+        <article class="proj">
+          <div class="proj__meta">
+            <span class="proj__domain">자동차 유통</span>
+            <span class="proj__type">백오피스 통합관리</span>
+          </div>
+          <h3 class="proj__title">딜러 통합관리 시스템 (IMS)</h3>
+          <p class="proj__desc">
+            차량·부품·보증·보험·정비이력·CS를 한곳에서 다루는 실운영 백오피스.
+            다도메인 업무 화면과 리포트를 개발·운영하며 보안 하드닝까지 담당했습니다.
+          </p>
+          <ul class="proj__highlights">
+            <li>모델 116 · 뷰 156 규모의 다도메인 업무 시스템</li>
+            <li>엑셀·PDF 리포트, 권한·다운로드 감사(Audit) 로그</li>
+            <li>XSS·응답헤더·WAF 등 보안 취약점 대응</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>PHP 8</li><li>CodeIgniter 4</li><li>jQuery · Tabulator</li>
+            <li>Highcharts</li><li>MySQL</li>
+          </ul>
+        </article>
+
+        <article class="proj">
+          <div class="proj__meta">
+            <span class="proj__domain">자동차 유통</span>
+            <span class="proj__type">모바일 앱 백엔드</span>
+          </div>
+          <h3 class="proj__title">고객 멤버십·바우처 앱 API</h3>
+          <p class="proj__desc">
+            차주 대상 모바일 앱의 백엔드. 멤버십 등급·혜택·바우처 라이프사이클과
+            차량·정비·예약 도메인을 처리하고, 푸시 발송을 직접 구현했습니다.
+          </p>
+          <ul class="proj__highlights">
+            <li>멤버십 등급·혜택·바우처(발급/연장/만료) 시스템</li>
+            <li>FCM 푸시 라이브러리 자체 구현, 다채널 알림</li>
+            <li>만료·강등·예약 발송 CLI 배치 자동화</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>PHP 8</li><li>CodeIgniter 4</li><li>MySQL</li>
+            <li>JWT</li><li>FCM</li>
+          </ul>
+        </article>
+
+        <article class="proj">
+          <div class="proj__meta">
+            <span class="proj__domain">자동차 유통</span>
+            <span class="proj__type">레거시 → 웹 전환</span>
+          </div>
+          <h3 class="proj__title">딜러관리 데스크톱의 웹 전환</h3>
+          <p class="proj__desc">
+            정비·부품·보증·정산 등 19개 모듈로 이뤄진 .NET 데스크톱 시스템을
+            REST API + SPA 구조로 옮기는 현대화 작업. 백엔드·프론트·레거시를 함께 다뤘습니다.
+          </p>
+          <ul class="proj__highlights">
+            <li>레거시 .NET WinForms(DevExpress) 유지보수와 분석</li>
+            <li>PHP API + Vue 3 SPA 신규 구축</li>
+            <li>엑셀 내보내기·PDF 출력, 재사용 컴포넌트 체계</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>PHP · CodeIgniter 4</li><li>Vue 3 · Vite</li><li>PrimeVue</li>
+            <li>C# · .NET 6</li><li>MS SQL Server</li>
+          </ul>
+        </article>
+
+        <article class="proj">
+          <div class="proj__meta">
+            <span class="proj__domain">부동산 · 프롭테크</span>
+            <span class="proj__type">온라인 거래 풀스택</span>
+          </div>
+          <h3 class="proj__title">전자입거 서비스 <span class="proj__place">· 일본</span></h3>
+          <p class="proj__desc">
+            비대면 확산으로 대면 거래가 어려워진 상황에서, 부동산 매물을 온라인으로 거래하는
+            시스템을 발족해 메인 프로그래머로 풀스택 개발을 맡았습니다.
+          </p>
+          <ul class="proj__highlights">
+            <li>온라인 매물 거래 시스템 신규 설계·구현</li>
+            <li>React 프론트 + Lumen API 풀스택</li>
+            <li>메인 프로그래머로 프로젝트 주도</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>React</li><li>Lumen</li><li>TypeScript</li>
+            <li>Docker</li><li>Sass · Pug</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CAREER ===================== -->
+    <section class="section section--alt" id="career">
+      <div class="wrap section__head">
+        <h2 class="section__title">경력</h2>
+        <p class="section__sub">한국과 일본에서, 부동산·게임·자동차 도메인을 거쳤습니다.</p>
+      </div>
+      <div class="wrap timeline">
+
+        <article class="tl">
+          <div class="tl__period">
+            <span class="tl__years">2024 – 현재</span>
+          </div>
+          <div class="tl__body">
+            <h3 class="tl__role">백엔드 · 풀스택 엔지니어</h3>
+            <p class="tl__org">자동차 유통·딜러·정비(DMS) 도메인 · 솔루션 개발</p>
+            <p class="tl__desc">
+              딜러관리·A/S·멤버십·시스템 연동 도메인에서 서버·프론트·데이터·인프라를 폭넓게 담당.
+              위 대표 프로젝트 대부분이 이 시기의 작업입니다.
+            </p>
+            <ul class="tags tags--sm">
+              <li>PHP · CodeIgniter 4</li><li>Java · Spring Boot</li>
+              <li>Vue 3</li><li>C# · .NET</li><li>RabbitMQ · CDC</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl">
+          <div class="tl__period">
+            <span class="tl__years">2022.01 – 2023.02</span>
+            <span class="tl__len">1년 2개월</span>
+          </div>
+          <div class="tl__body">
+            <h3 class="tl__role">게임 서버 개발</h3>
+            <p class="tl__org">비욘드윌 (BeyondWill) · 모바일 게임 개발·운영</p>
+            <p class="tl__desc">
+              게임 서버 유지보수와 게임 빌드·버전 관리를 담당했습니다.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Unity</li><li>C++</li><li>AWS</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl">
+          <div class="tl__period">
+            <span class="tl__years">2017.04 – 2020.06</span>
+            <span class="tl__len">3년 3개월</span>
+          </div>
+          <div class="tl__body">
+            <h3 class="tl__role">웹 개발</h3>
+            <p class="tl__org">
+              일본 정보크리에이트 (日本情報クリエイト) · 부동산 프롭테크
+              <a class="tl__link" href="https://www.n-create.co.jp/" target="_blank" rel="noopener">n-create.co.jp ↗</a>
+            </p>
+            <p class="tl__desc">
+              부동산 솔루션 WMP3의 유지보수와 리스폰시브·히트맵 신규 기능을 메인 프로그래머로 개발했고,
+              온라인 매물 거래(전자입거) 서비스를 풀스택으로 이끌었습니다.
+            </p>
+            <ul class="tags tags--sm">
+              <li>PHP · CakePHP · Laravel · Lumen</li><li>AngularJS · React</li>
+              <li>TypeScript</li><li>Docker · AWS</li><li>DynamoDB</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="tl tl--edu">
+          <div class="tl__period">
+            <span class="tl__years">~ 2017.02</span>
+          </div>
+          <div class="tl__body">
+            <h3 class="tl__role">학력 · 자격</h3>
+            <p class="tl__org">부산외국어대학교 커뮤니케이션일본어 (학사)</p>
+            <ul class="tags tags--sm">
+              <li>정보처리기사</li><li>JLPT N1</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== OPS / ENGINEERING ===================== -->
+    <section class="section" id="ops">
+      <div class="wrap section__head">
+        <h2 class="section__title">엔지니어링 · 운영 경험</h2>
+        <p class="section__sub">코드 밖에서 부딪힌 문제들. 재현하고, 원인을 찾고, 문서로 남겼습니다.</p>
+      </div>
+      <div class="wrap ops">
+        <div class="ops__item">
+          <h3>웹셸 침해사고 대응</h3>
+          <p>업로드 취약점 경로를 규명하고 운영·검증 환경에서 PoC로 재현, 임시폴더 실행 차단 등 근본 대책을 세웠습니다.</p>
+        </div>
+        <div class="ops__item">
+          <h3>DB 마이그레이션 설계</h3>
+          <p>MS SQL Server → PostgreSQL 이관. 스키마 분리, 프로시저 변환, pgcrypto 재해싱, UTF-16→UTF-8 인코딩 규칙 수립.</p>
+        </div>
+        <div class="ops__item">
+          <h3>CDC 파이프라인 점검</h3>
+          <p>정지된 CDC의 원인을 LSN·DDL 이력·스키마 드리프트로 추적해 진단했습니다.</p>
+        </div>
+        <div class="ops__item">
+          <h3>클라우드 백업 아키텍처</h3>
+          <p>NAS 물리 백업을 클라우드 오브젝트 스토리지로 이관. 스토리지 티어·비용을 비교 검토했습니다.</p>
+        </div>
+        <div class="ops__item">
+          <h3>부하 테스트</h3>
+          <p>k6로 단계적 VU 증가 시나리오를 구성하고 thresholds·checks로 응답을 검증했습니다.</p>
+        </div>
+        <div class="ops__item">
+          <h3>본인인증 SDK 연동</h3>
+          <p>인증 예외를 조사하고 최신 라이브러리 교체 리스크를 분석해 안전한 방향을 제시했습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section--contact" id="contact">
+      <div class="wrap contact">
+        <h2 class="contact__title">함께 만들 일이 있다면</h2>
+        <p class="contact__sub">연동이든, 현대화든, 새 서비스든 — 편하게 연락 주세요.</p>
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:pocoman10@naver.com">
+            <span class="contact__k">이메일</span>
+            <span class="contact__v">pocoman10@naver.com</span>
+          </a>
+          <a class="contact__link" href="https://github.com/" target="_blank" rel="noopener" data-placeholder="github">
+            <span class="contact__k">GitHub</span>
+            <span class="contact__v">github.com/pocomanm</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <span>금바다 · Backend / Full-stack Engineer</span>
+      <span>© <span id="year"></span></span>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
